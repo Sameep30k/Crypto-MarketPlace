@@ -1,0 +1,60 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    color: #ddd;
+    border-bottom: 2px solid #3c3c3c;
+}
+.navbar .logo{
+    width: max(12vw, 120px);
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.navbar li{
+    cursor: pointer;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: max(1vw,12px);
+}
+.navbar select{
+    padding: 5px, 8px;
+    border-radius: 6px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+.navbar option{
+    background-color: #09005c;
+    color: white;
+} 
+
+.navbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px;
+    padding: 10px 12px; /* Adjusted padding to be in the same format */
+    border-radius: 20px; /* Increased border-radius for a more rounded look */
+    font-size: 15px;
+    font-weight: bold;
+    color: #393939;
+    background: #fff; /* Ensures background color is white */
+    border: none;
+    box-shadow: 0px 8px 30px 4px rgba(13, 64, 232, 0.847);
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar button:hover {
+    background: #f0f0f0; /* Light grey background on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+.navbar button img{
+    width: 13px;
+} 

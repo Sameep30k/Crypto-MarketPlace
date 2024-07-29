@@ -97,10 +97,12 @@ const Home = () => {
         {Array.isArray(displayCoins) && displayCoins.length > 0 ? (
           displayCoins.slice(0, 10).map((item, index) => (
             <div className="table-layout" key={index}>
-              <p>{item.market_cap_rank}</p>
+              <p className='table-p'>{item.market_cap_rank}
+                 
+                <img src={item.image} alt="" height={35} width={35} />
+              </p>
               
-                {/* <img src={item.image} alt="" />
-                <p style={{ fontSize: '1em' }}>{item.name + " - " + item.symbol}</p> */}
+               
               
               <p>{item.name}</p>
               <p>{currency?.symbol}{item.current_price}</p>

@@ -78,6 +78,10 @@
     align-items: left;
     gap: 10px;
 }
-.table-layout div img{
-    width: 35px;
+.table-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
+

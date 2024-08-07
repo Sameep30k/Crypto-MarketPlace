@@ -46,7 +46,7 @@
     color: #393939;
     background: #fff; /* Ensures background color is white */
     border: none;
-    box-shadow: 0px 8px 30px 4px rgba(13, 64, 232, 0.847);
+    box-shadow: 0px 8px 30px 4px rgba(75, 99, 255, 0.847);
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
@@ -58,3 +58,25 @@
 .navbar button img{
     width: 13px;
 } 
+@media (max-width: 900px) {
+    .navbar{
+        padding: 20px 8%;
+    }
+    .navbar button{
+        gap: 8px;
+        padding: 8px 18px;
+        font-size: 14px;
+
+    }
+}
+@media (max-width: 768px) {
+    .navbar{
+        padding: 20px 5%;
+    }
+   .navbar ul{
+    display: none;
+   }
+   .navbar button img{
+    width: 12px;
+   }
+}

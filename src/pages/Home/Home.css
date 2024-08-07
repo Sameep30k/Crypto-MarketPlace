@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 .home{
     padding: 0px, 10px;
     padding-bottom: 100px;
@@ -11,10 +12,15 @@
     text-align: center;
     gap: 30px;
 }
-.hero h1{
-    font-size: max(4vw,36px);
-    font-family:'Times New Roman', Times, serif
+.hero h1 {
+    font-size: max(4vw, 36px);
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+   
 }
+
 .hero p{
     width: 75%;
     color: #ffffff;
@@ -51,24 +57,24 @@
     transition: background 0.3s, transform 0.3s;
 }
 .hero button:hover {
-    background: #196bdea4; /* Slightly darker shade */
+    background: #1084f9e1; /* Slightly darker shade */
     transform: scale(1.05); /* Slightly enlarge the button */
 }
 .crypto-table{
     max-width: 800px;
     margin: auto;
-    background: linear-gradient(rgba(142, 32, 232, 0.563),rgba(34, 0, 168, 0.629));
+    background: linear-gradient(rgba(142, 32, 232, 0.563),rgba(92, 51, 255, 0.629));
     border-radius: 15px;
 }
 .table-layout{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 0.5fr 1fr 0.9fr 1fr 1fr;
     padding: 15px 20px;
     align-items: center;
     border-radius: 1px solid #3c3c3c;
 }
 .market-cap{
-    text-align: right;
+    text-align: center;
 }
 .table-layout:last-child{
     border: none;
@@ -82,6 +88,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 22px;
+}
+@media (max-width: 768px){
+    .table-layout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    } 
+    .market-cap{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .table-layout div img{
+        width: 25px;
+    }
+    .table-layout{
+        font-size: 13px;
+    }
+    .hero form input{
+        width: 100px;
+    }
 }
 
